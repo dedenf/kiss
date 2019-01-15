@@ -13,7 +13,17 @@
     {{ partial "adsense" . }}
     {{ end }}
     <div class="content">
-      {{ .Content }}
+      <article>
+          {{ if .Params.subtext }}
+          <div class="subtext">{{ .Params.subtext }}</div>
+          {{ end }}
+
+          {{ if .Params.image }}
+          <img src="{{ .Params.image }}" alt="{{ .Params.summary }}">
+          {{ end }}
+      
+          {{ .Content }}
+      </article>
       {{ if .Site.Params.Info.related }}
       <div class="related">{{ partial "related" . }}</div>
       {{ end }}
