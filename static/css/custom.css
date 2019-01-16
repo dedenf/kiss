@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700|Lato:400,400i,700,700i|Noto+Sans|Montserrat:400,800,900|Merriweather:400');
+@import url('https://rsms.me/inter/inter-ui.css');
+html { font-family: 'Inter UI', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter UI var alt', sans-serif; }
+}
+* {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: top;
+}
+h1.title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    text-rendering: optimizeLegibility;
+}
+h1.title.is-4{
+    font-family: "Lato", sans-serif;
+}
+h1.logo {
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 44px;
+    color:#c5334c;
+}
+p {
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 16px;
+    line-height: 1.66;
+}
+
+article .subtext{
+    font-family: "Crimson text", sans-serif;
+    font-style: italic;
+    font-size: 1.5em;
+    color:#888;
+    margin:0 0 15px 0;
+}
+article img { 1margin:10px 0;}
+::selection { background: #f9415d; color: #fff; text-shadow: none; }
+p a, a.subtitle { color: #f9415d; font-weight: 500; text-decoration: none; border-bottom: 2px solid #dfe3e5; transition: ease color .2s; }
+p a:visited { color: #f9415d; font-weight: 500; text-decoration: none; border-bottom: 2px solid #dfe3e5; transition: ease color .2s; }
+a:hover { color: #c5334c; }
+
+.content .button.is-link {
+    background-color: #f9415d;
+    color:#fff;
+}
+.content .button:hover.is-link{
+    background-color: #c5334c;
+    color:#fff;
+}
